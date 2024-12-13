@@ -1,0 +1,136 @@
+/* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    background: #ffffff;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 450px; /* Increased width */
+    max-width: 95%;
+    border: 2px solid #6a11cb; /* Added border */
+}
+
+/* Header Section */
+.app {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Increased font size */
+    color: #6a11cb;
+}
+
+p {
+    margin: 5px 0 20px;
+    font-size: 1.1rem; /* Increased font size */
+    color: #333;
+}
+
+/* Interaction Area */
+textarea {
+    width: 100%;
+    height: 150px; /* Increased height */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Slider Styles */
+.sliders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-group {
+    flex: 1;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform for button effect */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Footer Links */
+/* Previous Footer Styles with Modifications */
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align it to the bottom of the page */
+    left: 50%; /* Move it horizontally to the center */
+    transform: translateX(-50%); /* Adjust the position back to center */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.footer p {
+    margin: 0;
+    color: #333;
+}
+
+
+/* Ensure to change the <footer> tag in HTML to <div class="footer"> to match this style */

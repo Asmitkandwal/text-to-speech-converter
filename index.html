@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfDOMx5u9qKz7aT0BfP5E4E4E4hhK+JEs5+gW7c2wZ6Mv4X7p9fB0c+UBZcRZkaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <h1>Text-to-Speech Converter</h1>
+            <p>Type something below and hear it spoken aloud!</p>
+            <textarea id="textToConvert" placeholder="Enter text here..."></textarea>
+            <div class="controls">
+                <select id="voiceSelect"></select>
+                <div class="sliders">
+                    <div class="slider-group">
+                        <label for="pitchRange">Pitch:</label>
+                        <input type="range" id="pitchRange" min="0.5" max="2" step="0.1" value="1">
+                    </div>
+                    <div class="slider-group">
+                        <label for="rateRange">Rate:</label>
+                        <input type="range" id="rateRange" min="0.5" max="2" step="0.1" value="1">
+                    </div>
+                </div>
+            </div>
+            <button id="convertBtn"><i class="fas fa-volume-up"></i> Convert to Speech</button>
+            <p class="error-message"></p>
+        </div>
+    </div><div class="footer">
+    <footer>
+        <p>Created by <strong>Asmit Kandwal</strong></p>
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
